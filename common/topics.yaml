@@ -1,0 +1,160 @@
+# Keyword dictionary for the rule-based topic classifier (common/topics.py).
+#
+# Each top-level key is one of the 8 required operational topics. Each topic
+# has a list of negative_keywords (phrases that, when present, suggest a
+# complaint about that topic) and positive_keywords (phrases suggesting
+# praise). Matching is case-insensitive and uses word-boundary substring
+# matching - see classify_review() in common/topics.py.
+#
+# Non-engineers can safely add/remove phrases here without touching any code.
+
+cleanliness:
+  negative_keywords:
+    - dirty
+    - dusty
+    - mouldy
+    - moldy
+    - mold
+    - stained
+    - smelled
+    - smelly
+    - unclean
+    - not clean
+    - filthy
+    - grimy
+    - hair in the
+  positive_keywords:
+    - clean
+    - spotless
+    - tidy
+    - fresh sheets
+    - immaculate
+
+check_in_experience:
+  negative_keywords:
+    - long wait
+    - slow check-in
+    - slow check in
+    - check-in took
+    - check in took
+    - no one at reception
+    - late check-in
+    - late check in
+    - waited forever
+    - confusing check-in
+  positive_keywords:
+    - smooth check-in
+    - smooth check in
+    - quick check-in
+    - quick check in
+    - easy check-in
+    - easy check in
+    - early check-in
+    - early check in
+    - seamless check-in
+
+staff_behaviour:
+  negative_keywords:
+    - rude staff
+    - rude receptionist
+    - unhelpful
+    - ignored us
+    - ignored me
+    - receptionist was rude
+    - staff was rude
+    - staff were rude
+    - no help from staff
+    - dismissive
+  positive_keywords:
+    - friendly staff
+    - helpful staff
+    - attentive staff
+    - lovely staff
+    - staff were great
+    - staff was great
+    - went above and beyond
+    - excellent service
+
+noise:
+  negative_keywords:
+    - noisy
+    - too loud
+    - very loud
+    - could hear
+    - thin walls
+    - street noise
+    - construction noise
+    - loud music
+    - noise from
+  positive_keywords:
+    - quiet
+    - peaceful
+    - no noise
+
+facilities:
+  negative_keywords:
+    - broken
+    - elevator was out
+    - lift was out
+    - lift out of order
+    - pool closed
+    - pool was closed
+    - ac not working
+    - air conditioning broke
+    - air conditioning did not work
+    - out of order
+    - not working
+  positive_keywords:
+    - great gym
+    - nice pool
+    - good facilities
+    - great facilities
+    - well equipped
+
+location:
+  negative_keywords:
+    - far from
+    - hard to find
+    - bad location
+    - poor location
+    - out of the way
+  positive_keywords:
+    - great location
+    - close to
+    - walking distance
+    - central location
+    - convenient location
+    - perfectly located
+
+room_condition:
+  negative_keywords:
+    - outdated
+    - worn out
+    - old furniture
+    - small room
+    - damaged
+    - run down
+    - tired decor
+    - needs renovation
+    - peeling paint
+  positive_keywords:
+    - spacious
+    - modern room
+    - well maintained
+    - newly renovated
+    - comfortable bed
+
+value_for_money:
+  negative_keywords:
+    - overpriced
+    - not worth
+    - expensive for
+    - poor value
+    - too expensive
+    - rip off
+  positive_keywords:
+    - good value
+    - worth the price
+    - affordable
+    - great value
+    - reasonably priced

@@ -1,0 +1,25 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+scraper/logs/
+
+# Database (generated from data/sample_reviews.json via scripts/seed_db.py)
+data/*.db
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# Env files
+.env
+.env.local
+*.env
+!frontend/.env.local.example
+
+# OS
+.DS_Store
